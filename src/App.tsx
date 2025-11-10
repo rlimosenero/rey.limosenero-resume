@@ -15,10 +15,10 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <BrowserRouter>
+        <BrowserRouter basename="/rey.limosenero-resume">
           <Routes>
-            <Route path={import.meta.env.BASE_URL} element={<Index />} />
-            <Route path={`${import.meta.env.BASE_URL}*`} element={<NotFound />} />
+            <Route path="/" element={<Index />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>
